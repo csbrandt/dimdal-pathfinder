@@ -1,0 +1,47 @@
+{
+  "name": "dimdal-pathfinder",
+  "version": "1.0.0",
+  "description": "An optimal pathfinder for vehicles in real-world digital terrain maps.",
+  "main": "index.js",
+  "scripts": {
+    "dist": "browserify index.js > dist/dimdal-pathfinder.js && browserify test/tests.js > test/dist/tests.js && browserify test/renderPath.js > test/dist/renderPath.js",
+    "build": "grunt && npm run dist"
+  },
+  "author": "csbrandt",
+  "license": "MPL-2.0",
+  "keywords": [
+    "pathfinder",
+    "pathfinding",
+    "astar",
+    "heightmap"
+  ],
+  "dependencies": {
+    "es6-promise": "^2.1.1",
+    "fibonacciheap": "^1.0.1",
+    "webworkify": "^1.0.2"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "canvas": "^1.2.3",
+    "canvas-browserify": "^1.1.1",
+    "color": "^0.8.0",
+    "expect.js": "^0.3.1",
+    "geojson-utils": "git+https://github.com/csbrandt/geojson-js-utils.git#coordinate-order",
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-jsbeautifier": "^0.2.10",
+    "load-grunt-tasks": "^3.1.0",
+    "lodash": "^3.7.0",
+    "mocha": "^2.3.3",
+    "osm-build-query": "^1.0.1",
+    "osm-discretize": "^1.0.0",
+    "osmtogeojson": "^2.2.5",
+    "q": "^1.4.1",
+    "request": "^2.55.0",
+    "turf": "^2.0.2",
+    "wgs84-intersect-util": "^1.0.4",
+    "wgs84-raster-util": "^1.1.0",
+    "wgs84-util": "^2.0.0"
+  }
+}

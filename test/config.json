@@ -1,0 +1,25 @@
+{
+	"heightmap": "./data/bolinas-lagoon.tif.png",
+	"bounds": "./data/bolinas-lagoon-bounds.json",
+	"terrainLUT": {
+	   "class": ["water", "wetland", "cliff", "rock", "tree", "glacier", "peak", "ridge", "scree", "coastline", "wood", "beach", "sand", "scrub", "grassland"],
+	   "cost": ["Infinity", "Infinity", "Infinity", "Infinity", "Infinity", "Infinity", 2, 1.9, 1.8, 1.7, 1.6, 1.4, 1.3, 1.1, 1, 0.9]
+	},
+	"roadLUT": {
+	   "class": ["residential", "service", "track", "unclassified", "tertiary", "secondary", "primary", "trunk", "living_street", "motorway", "motorway_link", "road", "trunk_link", "primary_link", "secondary_link"],
+	   "weight": [2, 1, 1, 1, 2, 3, 3, 3, 1, 3, 3, 1, 2, 2, 2],
+	   "large": ["motorway", "trunk", "primary", "secondary", "motorway_link"],
+	   "medium": ["residential", "tertiary", "trunk_link", "primary_link", "secondary_link"],
+	   "small": ["track", "living_street", "road", "unclassified", "service"],
+	   "cost": [0.000225, 0.00045, 0.0045]
+	},
+	"terrainColorLUT": {
+		"color": ["#b5d0d0", "#4aa5fa", "#d9d0c9", "#ecdcc8", "#89d2ae", "#fefefe", "#d08f55", "#f6eeb6", "#e0e0e0", "#de8989", "#89d2ae", "#fef1ba", "#fef1ba", "#ceeca8", "#cdf6c9", "#f1eee8"]
+	},
+	"roadColorLUT": {
+		"color": ["#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", ""]
+	},
+	"memInit": "./data/cells.mem",
+	"heightScaleFactor": 2.156862745098039,
+	"maxHeightDiff": 13.5
+}

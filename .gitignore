@@ -1,0 +1,10 @@
+node_modules
+references
+npm-debug.log
+tasks.txt
+notes.txt
+build
+build.log
+/*.png
+*Result.json
+*error.txt
