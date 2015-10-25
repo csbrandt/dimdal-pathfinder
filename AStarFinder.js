@@ -87,9 +87,9 @@ function edgeCost(crSrcDst, edgeDir) {
       cost = dataViewNodeLUT.roadCost[srcNode.roadClass];
    } else if ((srcNodeGroundCost === "Infinity") || (dstNodeGroundCost === "Infinity")) {
       return Infinity;
-      //} else if (Math.abs(srcNode.height - dstNode.height) > dataViewNodeLUT.maxHeightDiff) {
+   } else if (Math.abs(srcNode.height - dstNode.height) > dataViewNodeLUT.maxHeightDiff) {
       // apply slope modifier
-      //   return Infinity;
+      return Infinity;
    } else {
       // road costs for the cell take precedence over terrain costs
       cost = srcNodeGroundCost + dstNodeGroundCost;
