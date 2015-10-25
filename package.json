@@ -1,6 +1,6 @@
 {
   "name": "dimdal-pathfinder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An optimal pathfinder for vehicles in real-world digital terrain maps.",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,13 @@
     "build": "grunt && npm run dist"
   },
   "author": "csbrandt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csbrandt/dimdal-pathfinder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/csbrandt/dimdal-pathfinder/issues"
+  },
   "license": "MPL-2.0",
   "keywords": [
     "pathfinder",
